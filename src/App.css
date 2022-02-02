@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-  background: lightblue;
+  /* background: lightblue; */
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -14,27 +14,28 @@ body {
 }
 
 header {
-  background: lightcoral;
+  /* background: lightcoral; */
   padding: 20px;
 }
 
 .main {
   
   height: 100%;
-  background: lightgreen;
+  /* background: lightgreen; */
   display: flex;
   justify-content: flex-start;
 }
 
 nav {
   padding: 20px;
-  background: maroon;
+  /* background: maroon; */
+  border-right: 1px solid cornflowerblue;
   width: 20%;
 }
 
 main {
   padding: 20px;
-  background: violet;
+  /* background: violet; */
   width: 100%;
 }
 
