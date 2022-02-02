@@ -1,7 +1,10 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 // import { useEffect, useState } from 'react';
 
 export default function StarsTable({getId: setId, starsList}) {
+
+    let navigate = useNavigate();
     // const [starsList, setStarsList] = useState(props.starsList);
 
     // const populateStars = async () => {
@@ -38,7 +41,7 @@ export default function StarsTable({getId: setId, starsList}) {
             </thead>
             <tbody>
                 {starsList.map((star,id) => 
-                    <tr key={id}>
+                    <tr key={id} onClick={(e)=>navigate(`/star/profile/${star.id}`)}>
                         <td>{star.id}</td>
                         <td><span>{star.name}</span></td>
                         <td><span>{star.surname}</span></td>

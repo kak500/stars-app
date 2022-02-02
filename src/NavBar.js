@@ -8,7 +8,9 @@ export default function NavBar() {
             <li>
               <Link to={'/stars'}>Stars</Link>
             </li>
-            <li>nav2</li>
+            <li>
+              <Link to={'/stars-gallery'}>Gallery</Link>
+            </li>
             <li>nav3</li>
             <li>nav4</li>
         </ul>

@@ -10,12 +10,12 @@ export default function Profile({data: starInfo}) {
       <div className='profile-image'>
         <img src={starInfo.picture} className="profile-picture"/>
       </div>
-      <p>From: {starInfo.from}</p>
+      {/* <p>From: {starInfo.from}</p> */}
       {starInfo.links !== undefined && 
       <div className='link-list'>
         <h2>Links:</h2>
         {starInfo.links.map((link, id)=>
-          <a href={link.url}>{link.site}</a>
+          <a href={link.url} target="_blank">{link.site}</a>
         )}
       </div>
       }

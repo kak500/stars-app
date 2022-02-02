@@ -1,0 +1,29 @@
+/* .card {
+    padding: 20px;
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-evenly; 
+    border: 1px solid red;
+} */
+
+.card {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 5px;
+    border: 1px solid red;
+}
+
+.card:hover {
+    background: rosybrown;
+    cursor: pointer;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 5px;
+    row-gap: 5px;
+    overflow-wrap: break-word;
+    /* border: 1px solid green; */
+}

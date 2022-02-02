@@ -2,6 +2,7 @@ import React from 'react';
 import SearchBar from '../components/SearchBar';
 import StarsTable from '../components/StarsTable';
 import { useEffect, useState } from 'react';
+import StarsCards from '../components/StarsCards';
 
 export default function Stars({children}) {
     const [starsListDefaut, setStarsListDefaut] = useState([]);

@@ -4,6 +4,7 @@ import Layout from '../Layout';
 import Home from './home';
 import StarProfile from './star-profile';
 import Stars from './stars';
+import StarsGallery from './stars-gallery';
 
 export default function Pages() {
   return (
@@ -12,6 +13,7 @@ export default function Pages() {
           <Routes>
             <Route exact path='/' element={<Home/>}/>
             <Route exact path='/stars' element={<Stars/>}/>
+            <Route exact path='/stars-gallery' element={<StarsGallery/>}/>
             <Route exact path='/star/profile/:id' element={<StarProfile/>}/>
           </Routes>
         </Layout>
